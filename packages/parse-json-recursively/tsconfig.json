@@ -1,0 +1,23 @@
+{
+  "include": ["src"],
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "commonjs",
+    "lib": ["dom", "esnext"],
+    "importHelpers": true,
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "lib",
+    "strict": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": false,
+  }
+}

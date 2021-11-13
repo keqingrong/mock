@@ -1,0 +1,61 @@
+{
+  "name": "@keqingrong/mock-server",
+  "version": "0.0.1",
+  "description": "Mock server",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "public",
+    "lib",
+    "types"
+  ],
+  "bin": {
+    "mock-server": "lib/cli.js"
+  },
+  "scripts": {
+    "mock:config": "cross-env NODE_ENV=development node lib/cli.js --config ./example/mock.config.js",
+    "mock:start": "cross-env NODE_ENV=development node lib/cli.js --port=8090 --base-path=./example/apis",
+    "mock:watch": "cross-env NODE_ENV=development node lib/cli.js --watch --port=8090 --base-path=./example/apis",
+    "mock:help": "cross-env NODE_ENV=development node lib/cli.js --help",
+    "format": "prettier --write \"src/**/*.{js,ts,json}\" --loglevel warn",
+    "build": "tsc",
+    "prepack": "npm run build",
+    "test": "npm run build && ava"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@keqingrong/mock-shared": "^0.0.1",
+    "@koa/cors": "^3.1.0",
+    "@koa/router": "^9.4.0",
+    "address": "^1.1.2",
+    "chokidar": "^3.4.3",
+    "json5": "^2.2.0",
+    "koa": "^2.13.0",
+    "koa-body": "^4.2.0",
+    "koa-json": "^2.0.2",
+    "koa-logger": "^3.2.1",
+    "koa-safe-jsonp": "^1.0.0",
+    "koa-static": "^5.0.0",
+    "lodash": "^4.17.20",
+    "meow": "^8.0.0",
+    "mockjs": "^1.1.0",
+    "tslib": "^2.3.0",
+    "upath": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/klaw": "^3.0.1",
+    "@types/koa-json": "^2.0.18",
+    "@types/koa-logger": "^3.1.1",
+    "@types/koa-static": "^4.0.1",
+    "@types/koa__cors": "^3.0.2",
+    "@types/koa__router": "^8.0.4",
+    "@types/lodash": "^4.14.170",
+    "@types/mockjs": "^1.0.3",
+    "@types/node": "^15.12.4",
+    "ava": "^3.13.0",
+    "cross-env": "^7.0.2",
+    "prettier": "^2.2.1",
+    "typescript": "^4.3.4"
+  }
+}

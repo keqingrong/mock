@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "tsc --build tsconfig.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-typescript": "^7.16.0",
+    "@types/node": "^16.11.7",
+    "@types/prettier": "^2.4.1",
+    "@typescript-eslint/eslint-plugin": "^5.3.1",
+    "@typescript-eslint/parser": "^5.3.1",
+    "babel-jest": "^27.3.1",
+    "eslint": "^8.2.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jest": "^25.2.4",
+    "jest": "^27.3.1",
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.4"
+  }
+}

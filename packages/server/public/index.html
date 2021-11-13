@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mock Server APIs</title>
+  <style>
+    body {
+      line-height: 1.7;
+    }
+
+    :focus {
+      outline: none;
+    }
+
+    code {
+      color: rgb(71, 101, 130);
+      font-size: 0.85em;
+      background-color: rgba(27, 31, 35, 0.05);
+      padding: 0.25rem 0.5rem;
+      margin: 0px;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Mock Server APIs</h1>
+  <div id="app"></div>
+  <template id="api-list-template">
+    <ol>
+      <li v-for="item in apiList" v-bind:key="item.id">
+        <details>
+          <summary><code>{{ item.path }}</code></summary>
+          <ul>
+            <li>支持的请求方法：<code>{{ item.methods }}</code></li>
+            <li>请求路由地址：<code>"{{ item.path }}"</code></li>
+            <li>预览：<a :href="item.previewURL" target="_blank">{{ item.previewURL }}</a></li>
+          </ul>
+        </details>
+      </li>
+    </ol>
+  </template>
+  <script type="module" src="./index.js"></script>
+</body>
+
+</html>
