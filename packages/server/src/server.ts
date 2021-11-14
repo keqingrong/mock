@@ -7,7 +7,6 @@ import Router from '@koa/router';
 import koaBody from 'koa-body';
 import logger from 'koa-logger';
 import json from 'koa-json';
-// @ts-ignore
 import jsonp from 'koa-safe-jsonp';
 import koaStatic from 'koa-static';
 import { logError, logSuccess, logWarning } from '@keqingrong/mock-shared';
@@ -20,7 +19,7 @@ import {
 import { isBasePathExists } from './utils';
 import type { MockServerConfig } from './types';
 
-const __DEV__ = process.env.NODE_ENV === 'development';
+const __DEV__ = process.env.NODE_ENV !== 'production';
 
 export const serve = async (config: MockServerConfig) => {
   __DEV__ && console.log('[mock] config', config);

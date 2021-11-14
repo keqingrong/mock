@@ -17,11 +17,8 @@
     "parse-json",
     "json"
   ],
-  "author": "",
+  "author": "Qingrong Ke <keqingrong@outlook.com>",
   "license": "MIT",
-  "engines": {
-    "node": ">=10"
-  },
   "devDependencies": {
     "@babel/core": "^7.14.8",
     "@babel/preset-env": "^7.14.8",

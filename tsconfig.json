@@ -1,0 +1,20 @@
+{
+  "include": [
+    "./packages/parse-json-recursively/src/**/*.ts",
+    "./packages/server/src/**/*.ts",
+    "./packages/shared/src/**/*.ts"
+  ],
+  "compilerOptions": {
+    "paths": {
+      "@keqingrong/parse-json-recursively": [
+        "./packages/parse-json-recursively/src"
+      ],
+      "@keqingrong/mock-server": [
+        "./packages/server/src"
+      ],
+      "@keqingrong/mock-shared": [
+        "./packages/shared/src"
+      ]
+    }
+  }
+}
