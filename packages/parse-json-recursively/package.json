@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Parse JSON recursively",
   "main": "lib/index.js",
-  "types": "./lib",
+  "types": "lib/index.d.ts",
   "files": [
     "lib"
   ],
@@ -19,6 +19,11 @@
   ],
   "author": "Qingrong Ke <keqingrong@outlook.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keqingrong/mock.git",
+    "directory": "packages/parse-json-recursively"
+  },
   "devDependencies": {
     "@babel/core": "^7.14.8",
     "@babel/preset-env": "^7.14.8",

@@ -1,7 +1,7 @@
 {
   "name": "@keqingrong/mock-shared",
   "version": "0.0.1",
-  "description": "",
+  "description": "Utilities for mock server",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
@@ -11,6 +11,11 @@
   "keywords": [],
   "author": "Qingrong Ke <keqingrong@outlook.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keqingrong/mock.git",
+    "directory": "packages/shared"
+  },
   "dependencies": {
     "chalk": "^4.1.0",
     "junk": "^3.1.0",

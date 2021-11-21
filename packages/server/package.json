@@ -24,6 +24,11 @@
   },
   "author": "Qingrong Ke <keqingrong@outlook.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keqingrong/mock.git",
+    "directory": "packages/server"
+  },
   "dependencies": {
     "@keqingrong/mock-shared": "^0.0.1",
     "@koa/cors": "^3.1.0",
