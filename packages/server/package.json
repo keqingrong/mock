@@ -22,6 +22,10 @@
     "prepack": "npm run build",
     "test": "npm run build && ava"
   },
+  "keywords": [
+    "mock",
+    "mock-server"
+  ],
   "author": "Qingrong Ke <keqingrong@outlook.com>",
   "license": "MIT",
   "repository": {

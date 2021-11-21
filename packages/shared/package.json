@@ -8,7 +8,10 @@
     "build": "tsc",
     "test": "npm run build && ava"
   },
-  "keywords": [],
+  "keywords": [
+    "mock",
+    "mock-server"
+  ],
   "author": "Qingrong Ke <keqingrong@outlook.com>",
   "license": "MIT",
   "repository": {
